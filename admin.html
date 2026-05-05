@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel | GoldMine Capital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white">
+    <div class="flex">
+        <div class="w-64 h-screen border-r border-white/10 p-6 space-y-6">
+            <div class="text-xl font-bold text-yellow-500">GMC ADMIN</div>
+            <nav class="space-y-2">
+                <a href="#" class="block bg-yellow-500 text-black p-3 rounded-lg font-bold">Verifications</a>
+                <a href="#" class="block p-3 hover:bg-white/5 rounded-lg">User List</a>
+                <a href="#" class="block p-3 hover:bg-white/5 rounded-lg">Plan Rates</a>
+            </nav>
+        </div>
+
+        <div class="flex-1 p-10">
+            <h1 class="text-3xl font-bold mb-10">Pending Payment Reviews</h1>
+            
+            <div class="bg-white/5 rounded-2xl border border-white/10">
+                <table class="w-full text-left">
+                    <thead class="bg-yellow-500 text-black font-bold">
+                        <tr>
+                            <th class="p-4">User Email</th>
+                            <th class="p-4">Tier</th>
+                            <th class="p-4">TXN ID</th>
+                            <th class="p-4">Screenshot</th>
+                            <th class="p-4">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-white/5">
+                            <td class="p-4">arun@example.com</td>
+                            <td class="p-4">Gold ($20,000)</td>
+                            <td class="p-4 font-mono">TXN998210</td>
+                            <td class="p-4 text-blue-400 underline cursor-pointer">View Image</td>
+                            <td class="p-4 flex gap-2">
+                                <button class="bg-green-600 px-4 py-1 rounded text-sm">Approve</button>
+                                <button class="bg-red-600 px-4 py-1 rounded text-sm">Reject</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
