@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complete Payment | GoldMine Capital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0a0a0a] text-white flex justify-center items-center min-h-screen">
+    <div class="bg-white/5 p-10 rounded-2xl border border-white/10 w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-6 text-yellow-500">Subscription Payment</h2>
+        
+        <div class="bg-black p-4 rounded-lg mb-6 border border-white/5">
+            <p class="text-gray-400 text-sm">Transfer to Bank Account:</p>
+            <p class="font-bold mt-2">Bank: Global Trust Bank</p>
+            <p class="font-bold">A/C: 998877665544</p>
+            <p class="font-bold uppercase">IFSC: GOLD0001234</p>
+        </div>
+
+        <form id="paymentForm" class="space-y-4">
+            <div>
+                <label class="block text-sm text-gray-400 mb-1">Transaction ID</label>
+                <input type="text" class="w-full bg-black border border-white/20 p-3 rounded-lg focus:border-yellow-500 outline-none" placeholder="Enter TXN ID" required>
+            </div>
+            <div>
+                <label class="block text-sm text-gray-400 mb-1">Upload Screenshot</label>
+                <input type="file" class="w-full text-sm text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:bg-yellow-500 file:text-black" required>
+            </div>
+            <button type="submit" class="w-full bg-yellow-500 text-black font-bold py-3 rounded-lg mt-4">Submit Verification</button>
+        </form>
+    </div>
+</body>
+</html>
