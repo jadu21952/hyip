@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member Dashboard | GoldMine Capital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#050505] text-white p-6">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex justify-between items-center mb-10">
+            <h1 class="text-3xl font-bold">GoldMine <span class="text-yellow-500">Dashboard</span></h1>
+            <div class="text-right">
+                <p class="text-gray-400">Total Rewards</p>
+                <p id="rewardBalance" class="text-4xl font-black text-yellow-500">$540.22</p>
+            </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="col-span-2 bg-gradient-to-br from-yellow-600 to-yellow-800 p-8 rounded-3xl text-black">
+                <p class="font-bold uppercase tracking-widest text-sm opacity-70">Active Membership</p>
+                <h2 class="text-4xl font-black my-2 uppercase">Gold Tier</h2>
+                <div class="flex justify-between items-end mt-10">
+                    <div>
+                        <p class="font-bold">Growth Rate: 10% Daily</p>
+                        <p class="text-sm opacity-80">Next update in: <span id="timer">23:44:10</span></p>
+                    </div>
+                    <button class="bg-black text-white px-6 py-2 rounded-full font-bold">View History</button>
+                </div>
+            </div>
+
+            <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                <h3 class="font-bold text-xl mb-4">Referral Center</h3>
+                <div class="space-y-4">
+                    <div class="bg-black p-3 rounded-lg border border-white/5 flex justify-between">
+                        <span class="text-sm text-gray-400">GMC-REF-552</span>
+                        <span class="text-yellow-500 text-sm cursor-pointer">Copy</span>
+                    </div>
+                    <p class="text-sm text-gray-400 italic">2/3 Referrals completed to unlock redemption.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
